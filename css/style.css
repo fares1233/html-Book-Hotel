@@ -1,0 +1,326 @@
+:root {
+    --primary-color: #2c3855;
+    --primary-color-dark: #435681;
+    --text-dark: #333333;
+    --text-light: #767268;
+    --extra-light: #f3f4f6;
+    --white: #ffffff;
+    --max-width: 1200px;
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; 
+}
+
+html {
+  font-size: 62.5%; 
+}
+
+body {
+  box-sizing: border-box; 
+  font-family: "Open Sans", sans-serif;
+}
+
+.nav-bar {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 2rem;
+}
+
+.logo {
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.nav-components {
+    display: flex;
+    font-size: 1.6rem;
+    font-weight: bold;
+}
+
+.nav-components a {
+    margin: auto;
+    padding: 0 2rem;
+    transition: all .2s;
+    text-decoration: none;
+    color: var(--text-light);
+}
+
+.nav-components a:hover {
+    color: var(--primary-color);
+}
+
+/* Header */
+
+header {
+    height:100vh;
+    background-image: linear-gradient(to right, rgba(44, 56, 85, 0.9), rgba(100, 125, 187, 0.1)), url(../imgs/background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 4rem 8rem;
+    border-radius: 2rem;
+    position: relative;
+}
+
+.header-text {
+    color: var(--white);
+    position: absolute;
+    top: 15rem;
+    left: 5rem;
+    max-width: 45rem;
+}
+
+.header-text h1 {
+    font-size: 5rem;
+    font-weight: bold;
+    margin-bottom: 3rem;
+}
+
+.header-text p {
+    font-weight: 500;
+    font-size: 1.5rem;
+}
+
+/* Hotels */
+
+.hotels h1 {
+    text-align: center;
+    margin: 10rem auto 5rem auto;
+    font-size: 4rem;
+    font-weight: bolder;
+}
+
+.all-hotels {
+    display: grid;
+    grid-template-columns: repeat( auto-fit, minmax(350px, 1fr) );
+    grid-gap: 3rem;
+    margin: 0 auto;
+    margin: 4rem 8rem;
+}
+
+.card {
+    box-shadow: 0 0 1rem rgba(0,0,0,.4);
+    border-radius: 2rem;
+    overflow: hidden;
+    transition: all .1s;
+}
+
+.card img {
+    width: 100%;
+    height: 25rem;
+}
+
+.card p {
+    color: var(--text-light);
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-left: 2.5%;
+    margin-bottom: 2rem;
+}
+
+.price {
+    width: 95%;
+    margin: .5rem auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.price h2{
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.card:hover {
+    opacity: .9;
+}
+
+/* Opinions */
+
+.opinion {
+    background-color: var(--extra-light);
+    margin: 10rem 0 0 0;
+}
+
+.main-text {
+    font-size: 3.5rem;
+    font-weight: bold;
+    text-align: center;
+    padding: 3rem 0;
+}
+
+.all-opinion {
+    display: grid;
+    grid-template-columns: repeat( auto-fit, minmax(300px, 1fr) );
+    grid-gap: 2rem;
+    width: 90%;
+    margin: 3rem auto;
+    text-align: center;
+}
+
+.opinion-card {
+    margin-bottom: 5rem;
+    position: relative;
+    background-color: white;
+    box-shadow: 8px 8px 8px rgba(0, 0, 0, 0.4);
+    border-radius: 2rem;
+    height: 20rem;
+}
+
+.opinion-card img {
+    position: absolute;
+    height: 10rem;
+    border-radius: 50%;
+    border: 7px solid var(--extra-light);
+    top: -3rem;
+    left: 36%;
+    transition: all .3s;
+}
+
+.opinion-card p {
+    position: absolute;
+    top: 11rem;
+    left: 2rem;
+    font-size: 1.7rem;
+    font-weight: 400;
+    width: 90%;
+}
+
+.opinion-card:hover img{
+    transform: translateY(-.8rem);
+}
+
+/* Join */ 
+
+
+.text-center {
+    width: 90%;
+    margin: 0 auto;
+    text-align: center;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+    margin: 50px auto;
+    border-radius: 2rem;
+    height: 26rem;
+}
+
+.text-center p {
+    font-size: 1.8rem;
+    color: var(--text-light);
+    font-weight: bold;
+    padding-top: 2rem;
+}
+
+.text-center h2 {
+    width: 60%;
+    font-size: 4rem;
+    font-weight: bold;
+    margin: 2rem auto;  
+}
+
+.text-center a {
+    text-decoration: none;
+    background-color: var(--primary-color);
+    color: white;
+    font-size: 2rem; 
+    padding: 1rem 3rem;
+    border-radius: 1rem;
+    margin-bottom: 3rem;
+    transition: all .2s;
+}
+
+.text-center a:hover {
+    background-color: var(--primary-color-dark);
+}
+
+/*footer*/
+
+footer {
+    background-color: var(--extra-light);
+    padding-bottom: 5rem;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat( auto-fit, minmax(300px, 1fr) );
+    grid-gap: 5rem;
+    width: 90%;
+    margin: 0 auto;
+    padding-top: 5rem;
+}
+
+.footer-col h1 {
+    font-size: 2.5rem;
+}
+
+.footer-col p {
+    font-size: 1.6rem;
+    color: var(--text-dark);
+    padding-top: 2rem;
+}
+
+/* mopile */
+
+@media (max-width: 767px) {
+    .nav-components {
+        display: none;
+    }
+
+    header {
+        width: 95%;
+        margin: 3rem auto;
+    }
+
+    .header-text {
+        top: 20rem;
+        left: 2rem;
+    }
+
+    .header-text h1 {
+        font-size: 3rem;
+    }
+
+    .hotels {
+        width: 50%;
+        margin: 0 auto;
+    }
+
+    .text-center {
+        height: 25rem;
+    }
+
+    .text-center h2 {
+        font-size: 2rem;
+    }
+
+    footer {
+        text-align: center;
+    }
+    
+    .all-hotels {
+        display: block;
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .card {
+        margin-bottom: 3rem;
+    }
+
+    .hotels h1 {
+        font-size: 3rem;
+    }
+
+    .main-text {
+        font-size: 2.5rem;
+    }
+
+    .opinion-card p {
+        top: 9.3rem;
+    }
+
+}
